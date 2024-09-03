@@ -1,14 +1,12 @@
 <<<<<<< HEAD
 # Student-Management-LLM
-This project is focused on developing a Student Management System integrated with a Large Language Model (LLM) agent to handle book-related inquiries and student questions. The system is built with a backend LLM agent and a frontend using either Streamlit or FastAPI.
+The primary goal of this project is to create a Student Management System that is connected with a Large Language Model (LLM) agent to address questions from students and book-related queries. The frontend of the system is either constructed with FastAPI or Streamlit, while the backend is an LLM agent.
 
 ## Features
 
-- Instruction-based agent for responding to book or topic-related questions.
-- Suggests or recommends books, papers, and articles based on the student's query.
-- Follows up on questions for continued interaction.
-- Proper code structure with separation across supervisor, adapter, and LLM layers.
-- Logs user interactions for history tracking.
+- An agent that follows instructions to answer queries about books or related topics.
+- Based on the student's inquiry, or recommends books, papers, and articles.
+- Responds to enquiries to encourage further communication.
 
 ## Installation
 
@@ -17,17 +15,11 @@ This project is focused on developing a Student Management System integrated wit
    git clone https://github.com/Vedashree25/Student-Management-LLM.git
    cd Student-Management-LLM
 =======
-# Student Management System with LLM
+# Student Management using LLM
 
-## Project Overview
+## Overview
 
-This project is a student management system that leverages a Large Language Model (LLM) to provide book recommendations and answer student queries. It uses Streamlit for the frontend and is deployable on Firebase.
-
-## Features
-
-- Instruction-based agent for book and student-related queries.
-- Suggests answers and recommends books, papers, and articles based on queries.
-- Logging of user interactions.
+The item being developed is a student management system that uses an LLM (large language model) to recommend books and respond to enquiries from students. It can be deployed on Firebase and has a frontend built with Streamlit.
 
 ## Prerequisites
 
@@ -106,20 +98,6 @@ This project is a student management system that leverages a Large Language Mode
     ```bash
     firebase deploy
     ```
-
-## Logs
-
-- Logs of user interactions are stored in `logs/user_interactions.log`.
-
-## Contributing
-
-If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
 
 ## License
 
