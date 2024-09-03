@@ -4,14 +4,13 @@ from adapter import Adapter
 from llm_layer import LLMLayer
 
 def main():
-    # Initialize components
-    llm_layer = LLMLayer(model_name="gpt2")  # Use appropriate model
+    llm_layer = LLMLayer(model_name="gpt2")
     adapter = Adapter(llm_layer)
     supervisor = Supervisor(adapter)
 
     # Example interaction
-    user_query = "What books do you recommend for machine learning?"
-    response = supervisor.handle_query(user_query)
+    user_query = "What books to read for AI?"
+    response = supervisor.query(user_query)
     print("Agent Response:", response)
 
 if __name__ == "__main__":
@@ -33,19 +32,14 @@ def main():
     llm_layer = LLMLayer()
     supervisor = Supervisor(adapter, llm_layer)
     
-    # Example interaction with logging
-    user_query = "What books do you recommend for machine learning?"
+    user_query = "What books to read for AI?"
     
-    # Log the user query
     logging.info(f"User Query: {user_query}")
     
-    # Process the query
     response = supervisor.process_student_query(user_query)
-    
-    # Log the agent's response
+
     logging.info(f"Agent Response: {response}")
     
-    # Print the response to the console
     print("Agent Response:", response)
 
 if __name__ == "__main__":
